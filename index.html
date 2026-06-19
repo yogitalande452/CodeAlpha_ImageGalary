@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-image"></i>
+            <h2>Image Gallery</h2>
+        </div>
+
+        <div class="header-controls">
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search images..."
+            >
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section class="filter-section">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="Nature">
+            Nature
+        </button>
+
+        <button class="filter-btn" data-filter="City">
+            City
+        </button>
+
+        <button class="filter-btn" data-filter="Animals">
+            Animals
+        </button>
+
+        <button class="filter-btn" data-filter="Technology">
+            Technology
+        </button>
+
+    </section>
+
+
+    <main>
+
+        <div id="gallery" class="gallery"></div>
+
+    </main>
+
+    
+
+    <div class="counter">
+        Showing <span id="imageCount">0</span> Images
+    </div>
+
+
+
+    <div id="lightbox">
+
+        <span id="closeBtn">&times;</span>
+
+        <button id="prevBtn">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImg">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxCategory"></p>
+
+            <p id="lightboxDescription"></p>
+
+            <div class="lightbox-info">
+    <p>Use ← → keys to navigate images</p>
+</div>
+
+        </div>
+
+        <button id="nextBtn">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
